@@ -1,0 +1,71 @@
+:root {
+    --lilac: #c9b8e8;
+    --light-purple: #a98fd0;
+    --deep-purple: #7b5ea7;
+    --blush: #f3eef9;
+    --cream: #faf7ff;
+    --text-dark: #2d2040;
+    --text-mid: #5c4f7a;
+    --text-light: #9b8bb5;
+    --white: #ffffff;
+}
+
+.hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
+    overflow: hidden;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 6rem 3rem 6rem 4rem;
+    min-height: 100%;
+}
+
+.hero-right {
+    background: var(--blush);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.hero-tag {
+    color: var(--light-purple);
+    margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+    color: var(--text-mid);
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    }
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    object-position: top;
+}
