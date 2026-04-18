@@ -85,3 +85,35 @@
 .slide.active {
     opacity: 1;
 }
+
+.marquee-bar {
+    background: var(--deep-purple);
+    padding: 1rem 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-track {
+    display: inline-flex;
+    gap: 1.5rem;
+    animation: marquee 20s linear infinite;
+    padding: 0 1.5rem;
+}
+
+.marquee-track span {
+    font-size: 0.78rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--lilac);
+    font-weight: 400;
+}
+
+.marquee-dot {
+    color: var(--lilac);
+    opacity: 0.5;
+}
+
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
