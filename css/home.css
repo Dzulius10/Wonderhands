@@ -117,3 +117,126 @@
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
 }
+
+.products-section {
+    background: var(--white);
+    padding: 6rem 4rem;
+}
+
+.products-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background: var(--cream);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(123, 94, 167, 0.12);
+}
+
+.product-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-img img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    padding: 1.4rem;
+}
+
+.product-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.4rem;
+}
+
+.product-desc {
+    font-size: 0.85rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+
+.product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-price {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--deep-purple);
+}
+
+.product-order {
+    font-size: 0.78rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: var(--light-purple);
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.product-order:hover {
+    color: var(--deep-purple);
+}
+
+@media (max-width: 900px) {
+   .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+   }
+
+   .products-section {
+    padding: 4rem 2rem;
+   }
+
+   .hero {
+    grid-template-columns: 1fr;
+   }
+
+   .hero-right {
+    height: 350px;
+   }
+
+   .hero-left {
+    padding: 3rem 2rem;
+   }
+}
+
+@media (max-width: 600px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-right {
+        height: 200px;
+    }
+}
