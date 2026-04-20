@@ -177,3 +177,23 @@ nav {
         background: var(--text-dark);
     }
 }
+
+.section-tag {
+   font-size: 0.72rem;
+   letter-spacing: 0.22em;
+   text-transform: uppercase;
+   color: var(--light-purple);
+   font-weight: 500;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.section-tag::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 1px;
+    background: var(--light-purple);
+}

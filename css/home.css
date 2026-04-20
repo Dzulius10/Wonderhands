@@ -229,6 +229,12 @@
    .hero-left {
     padding: 3rem 2rem;
    }
+
+   .order-section {
+    grid-template-columns: 1fr;
+    padding: 4rem 2rem;
+    gap: 3rem;
+   }
 }
 
 @media (max-width: 600px) {
@@ -239,4 +245,134 @@
     .hero-right {
         height: 200px;
     }
+
+    .order-section {
+        padding: 3rem 1.5rem;
+    }
+}
+
+.order-section {
+    background: var(--blush);
+    padding: 6rem 4rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.order-info p {
+    font-size: 0.92rem;
+    color: var(--text-mid);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-weight: 300;
+}
+
+.order-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+}
+
+.order-benefit {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 0.85rem;
+    color: var(--text-mid);
+    font-weight: 300;;
+}
+
+
+.order-benefit span {
+    color: var(--deep-purple);
+    font-weight: 500;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-group label {
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-mid);
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    background: var(--white);
+    border: 1px solid rgba(169, 143, 208, 0.3);
+    border-radius: 2px;
+    padding: 0.8rem 1rem;
+    font-size: 0.9rem;
+    font-family: 'Jost', sans-serif;
+    color: var(--text-dark);
+    font-weight: 300;
+    outline: none;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--light-purple);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.order-form .btn-primary {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5rem;
+    border-radius: 25px;
+}
+
+.order-info .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.order-info .section-tag {
+    margin-bottom: 1rem;
+}
+
+.order-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-info .section-title em {
+    color: var(--deep-purple);
+    font-style: italic;
+}
+
+.order-section {
+    background: var(--blush);
+    padding: 6rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    min-height: 80vh;
 }
