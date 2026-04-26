@@ -352,3 +352,84 @@ nav {
 .chat-send:hover {
     background: var(--light-purple);
 }
+
+footer {
+    background: var(--text-dark);
+    color: var(--white);
+    padding: 3rem 4rem;
+    border-top: 1px solid rgba(169, 143, 208, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+footer .logo img {
+    height: 80px;
+    width: auto;
+    opacity: 0.85;
+    border-radius: 50%;
+}
+
+footer .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+footer .nav-links a {
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 0.2s;
+}
+
+footer .nav-links a:hover {
+    color: var(--lilac);
+}
+
+footer .copyright {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+footer .socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+footer .socials a {
+    font-size: 0.78rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    transition: color 0.2s;
+}
+
+footer .socials a:hover {
+    color: var(--lilac);
+}
+
+@media (max-width: 900px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+    .ai-section {
+        grid-template-columns: 1fr;
+        padding: 4rem 2rem;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .nav-links {
+        justify-content: center;
+    }
+}
